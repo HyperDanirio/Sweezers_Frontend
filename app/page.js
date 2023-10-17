@@ -6,8 +6,8 @@ function page() {
     <>
       <Header />
       <div className="w-screen h-screen bg-gradient-to-b from-[#130722] from-20% to-60% to-black/90 text-white flex justify-center items-center space-x-10">
-        <div className="w-[400px] h-[500px] rounded-xl border-2 border-[#4F0D77] flex flex-col">
-          <div className="w-full h-[400px] rounded-xl flex justify-center items-center hover:scale-110 transition-all">
+        <button className="w-[400px] h-[500px] rounded-xl border-2 border-[#4F0D77] flex flex-col group">
+          <div className="w-full h-[400px] rounded-xl flex justify-center items-center group-hover:scale-110 transition-all">
             {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +25,28 @@ function page() {
             </svg>
           </div>
           <div className="w-full h-[100px] rounded-b-xl bg-[#4F0D77] flex justify-center items-center">
-            <div className=" font-bold text-slate-400 hover:scale-105 hover:text-white  transition-all duration-500 cursor-pointer">Click Here to choose file</div>
+            <div className=" font-semibold text-slate-400 group-hover:scale-105 group-hover:text-white  transition-all duration-150 cursor-pointer">
+              Click Here to choose file
+            </div>
           </div>
-        </div>
+        </button>
         <div className="w-[300px] h-[500px] rounded-xl flex flex-col">
-          <div className="w-[300px] h-[425px] rounded-xl"></div>
+          <div className="w-[300px] h-[425px] rounded-xl flex justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="grey"
+              class="w-12 h-12"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+              />
+            </svg>
+          </div>
           <button className="w-[300px] h-[75px] rounded-xl bg-[#6D13A5] hover:bg-[#310849] flex justify-center items-center hover:scale-105 duration-100">
             <button className="text-lg font-medium">Convert</button>
           </button>
