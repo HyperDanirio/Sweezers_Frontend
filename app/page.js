@@ -24,7 +24,9 @@ function page() {
               />
             </svg>
           </div>
-          <div className="w-full h-[100px] rounded-b-xl bg-[#4F0D77]"></div>
+          <div className="w-full h-[100px] rounded-b-xl bg-[#4F0D77] flex justify-center items-center">
+            <div className=" font-bold text-slate-400 hover:scale-105 hover:text-white  transition-all duration-500 cursor-pointer">Click Here to choose file</div>
+          </div>
         </div>
         <div className="w-[300px] h-[500px] rounded-xl flex flex-col">
           <div className="w-[300px] h-[425px] rounded-xl"></div>
